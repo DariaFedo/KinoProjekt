@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nowy_system"
         mc:Ignorable="d"
-        Title="Film_sForm" Height="800" MinHeight="750" Width="500" MinWidth="400">
+        Title="Film_sForm" Height="900" MinHeight="900" Width="500" MinWidth="400">
 
     <Window.Resources>
         <Style x:Key="TextBoxStyling" TargetType="TextBox">
@@ -24,79 +24,84 @@
         </Style>
     </Window.Resources>
 
-    <ScrollViewer>        
-    <Grid x:Name="FilmForm">
+    <ScrollViewer>
+        <Grid x:Name="FilmForm">
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="500"  />
-        </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"  />
+            </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition  Height="55" />
-            <RowDefinition  Height="80"/>
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
-            <RowDefinition  Height="80" />
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="55" />
+                <RowDefinition  Height="80"/>
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
+                <RowDefinition  Height="80" />
 
-        </Grid.RowDefinitions>
+            </Grid.RowDefinitions>
 
-        <!-- Formularz tytuł -->
-        <TextBlock x:Name="WorkerHeader" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" 
+            <!-- Formularz tytuł -->
+            <TextBlock x:Name="WorkerHeader" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" 
                    FontSize="24" VerticalAlignment="Center" FontStyle="Normal" FontWeight="UltraBold" Margin="135,13,128,10">           
         Film's form</TextBlock>
 
-        <!-- Title texbox + label -->
-        <Label x:Name="Titlelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="1"  Margin="50,26,350,25">Title</Label>
-        <TextBox x:Name="TitleInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Title, Mode=TwoWay}" Grid.Row="1"/>
+            <!-- Title texbox + label -->
+            <Label x:Name="Titlelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="1"  Margin="50,26,350,25">Title</Label>
+            <TextBox x:Name="TitleInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Title}" Grid.Row="1"/>
 
-        <!-- Director textbox + label -->
-        <Label x:Name="Directorlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="2" Margin="50,25,350,26">Director</Label>
-        <TextBox x:Name="DirectorInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Director, Mode=TwoWay}" Grid.Row="2"/>
+            <!-- Director textbox + label -->
+            <Label x:Name="Directorlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="2" Margin="50,25,350,26">Director</Label>
+            <TextBox x:Name="DirectorInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Director}" Grid.Row="2"/>
 
-        <!-- Cast texbox + label -->
-        <Label x:Name="Castlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="3" Margin="50,26,350,25">Cast</Label>
-        <TextBox x:Name="CastInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Cast, Mode=TwoWay}" Grid.Row="3"/>
+            <!-- Cast texbox + label -->
+            <Label x:Name="Castlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="3" Margin="50,26,350,25">Cast</Label>
+            <TextBox x:Name="CastInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Cast}" Grid.Row="3"/>
 
-        <!-- Genre texbox + label -->
-        <Label x:Name="Genrelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="4" Margin="50,26,350,25">Genre</Label>
-        <TextBox x:Name="GenreInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Genre, Mode=TwoWay}" Grid.Row="4"/>
+            <!-- Genre texbox + label -->
+            <Label x:Name="Genrelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="4" Margin="50,26,350,25">Genre</Label>
+            <TextBox x:Name="GenreInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Genre}" Grid.Row="4"/>
 
-        <!-- Language texbox + label -->
-        <Label x:Name="Languagelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="5" Margin="50,26,350,25">Language</Label>
-        <TextBox x:Name="LanguageInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Language, Mode=TwoWay}" Grid.Row="5"/>
+            <!-- Language texbox + label -->
+            <Label x:Name="Languagelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="5" Margin="50,26,350,25">Language</Label>
+            <TextBox x:Name="LanguageInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Language}" Grid.Row="5"/>
 
-        <!-- Length texbox + label -->
-       <Label x:Name="Lengthlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="6" Margin="50,26,350,25">Length</Label>
-        <TextBox x:Name="LengthInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Length, Mode=TwoWay}" Grid.Row="6"/>
+            <!-- Length texbox + label -->
+            <Label x:Name="Lengthlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="6" Margin="50,26,350,25">Length</Label>
+            <TextBox x:Name="LengthInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Length}" Grid.Row="6"/>
 
-        <!-- Age Restriction texbox + label -->
-        <Label x:Name="AgeRestrictionlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="7" Margin="50,26,350,25">Age Restriction</Label>
-        <TextBox x:Name="AgeRestrictionInput" Style="{StaticResource TextBoxStyling }" Text="{Binding AgeRestriction, Mode=TwoWay}" Grid.Row="7"/>
+            <!-- Age Restriction texbox + label -->
+            <Label x:Name="AgeRestrictionlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="7" Margin="50,26,350,25">Age Restriction</Label>
+            <TextBox x:Name="AgeRestrictionInput" Style="{StaticResource TextBoxStyling }" Text="{Binding AgeRestriction}" Grid.Row="7"/>
 
-         <!-- Tech Version texbox + label -->
-        <Label x:Name="TechVerlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="8" Margin="50,26,350,25">Tech Version</Label>
-        <TextBox x:Name="TechVerInput" Style="{StaticResource TextBoxStyling }" Text="{Binding TechVersion, Mode=TwoWay}" Grid.Row="8"/>
+            <!-- Tech Version texbox + label -->
+            <Label x:Name="TechVerlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="8" Margin="50,26,350,25">Tech Version</Label>
+            <TextBox x:Name="TechVerInput" Style="{StaticResource TextBoxStyling }" Text="{Binding TechVersion}" Grid.Row="8"/>
 
-        <!-- Premiere texbox + label -->
-        <Label x:Name="Premierelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="9" Margin="50,26,350,25">Premiere</Label>
-        <TextBox x:Name="PremiereInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Premiere, Mode=TwoWay}" Grid.Row="9"/>
-           
-        <!-- Zatwierdź -->
-        <Button x:Name="zatwierdz" Grid.Row="10" Width="100" Height="30" HorizontalAlignment="Center"
-                FontWeight="Bold" BorderBrush="Black" BorderThickness="2"  >Zatwierdź
-        </Button>
+            <!-- Premiere texbox + label -->
+            <Label x:Name="Premierelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="9" Margin="50,26,350,25">Premiere</Label>
+            <TextBox x:Name="PremiereInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Premiere}" Grid.Row="9"/>
+
+            <!-- Zatwierdź -->
+            <Button x:Name="zatwierdz" Grid.Row="10" Width="100" Height="30" HorizontalAlignment="Center"
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="98,25,302,26" Click="Zatwierdz_Click"  >Zatwierdź
+            </Button>
+
+            <!-- Anuluj -->
+            <Button x:Name="cancel" Grid.Row="10" Width="100" Height="30" HorizontalAlignment="Center"
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="302,25,98,26" Click="Cancel_Click"  >Cancel
+            </Button>
 
 
 
 
 
-    </Grid>
-        </ScrollViewer>
-    
+        </Grid>
+    </ScrollViewer>
+
 </Window>

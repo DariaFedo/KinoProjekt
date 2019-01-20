@@ -23,7 +23,38 @@ namespace Cinema.Ticket.System
                 this.Premiere = premiere;
                 this.Title = title;
                 this.TechVersion = techversion;
-                
+
+            }
+            catch
+            {
+                throw new global::System.NotImplementedException();
+            }
+        }
+        public Film(Film film1)
+        {
+            try
+            {
+                this.IDfilm = film1.IDfilm;
+                this.AgeRestriction = film1.AgeRestriction;
+                this.Cast = film1.Cast;
+                this.Director = film1.Director;
+                this.Genre = film1.Genre;
+                this.Language = film1.Language;
+                this.Length = film1.Length;
+                this.Premiere = film1.Premiere;
+                this.Title = film1.Title;
+                this.TechVersion = film1.TechVersion;
+
+            }
+            catch
+            {
+                throw new global::System.NotImplementedException();
+            }
+        }
+        public Film()
+        {
+            try
+            {
             }
             catch
             {
@@ -51,6 +82,7 @@ namespace Cinema.Ticket.System
             }
             set
             {
+                _Length = value;
             }
         }
 

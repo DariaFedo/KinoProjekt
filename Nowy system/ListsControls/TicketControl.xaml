@@ -13,7 +13,6 @@
                     <GridViewColumn Header="ID" Width="auto" DisplayMemberBinding="{Binding IDticket}" />
                     <GridViewColumn Header="Price" Width="auto" DisplayMemberBinding="{Binding Price}" />
                     <GridViewColumn Header="Type" Width="auto" DisplayMemberBinding="{Binding Type}" />
-                    
                 </GridView>
             </ListView.View>
         </ListView>

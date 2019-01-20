@@ -34,3 +34,12 @@ I:\STUDIA\Programowanie3\KINO\Cinema.Daria\Cinema\Cinema.Ticket.System\obj\Debug
 I:\STUDIA\Programowanie3\KINO\Cinema.Daria\Cinema\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.AssemblyInfo.cs
 I:\STUDIA\Programowanie3\KINO\Cinema.Daria\Cinema\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.dll
 I:\STUDIA\Programowanie3\KINO\Cinema.Daria\Cinema\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.pdb
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\bin\Debug\netstandard2.0\Cinema.Ticket.System.deps.json
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\bin\Debug\netstandard2.0\Cinema.Ticket.System.dll
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\bin\Debug\netstandard2.0\Cinema.Ticket.System.pdb
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.csprojAssemblyReference.cache
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.csproj.CoreCompileInputs.cache
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.AssemblyInfoInputs.cache
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.AssemblyInfo.cs
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.dll
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Cinema.Ticket.System\obj\Debug\netstandard2.0\Cinema.Ticket.System.pdb

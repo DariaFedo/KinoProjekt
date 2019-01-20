@@ -208,21 +208,17 @@ namespace Cinema.Ticket.System
         {
             try
             {
-                if (_WorkerCollection.Find(delegate (Worker i) { return i.Login == login; }) is null)
+                if (_WorkerCollection.Find(i => (i.Login == login) && (i.Password == password)) is null)
                     return false;
                 else
                 {
-                    if (_WorkerCollection.Find(i => (i.Login == login) && (i.Password == password)) is null)
-                        return false;
-                    else
-                    {
-                        return true;
-                    }
+                    return true;
                 }
+
             }
-            catch 
+            catch
             {
-                  throw new Exception("Log in problem");
+                throw new Exception("Log in problem");
             }
 
         }

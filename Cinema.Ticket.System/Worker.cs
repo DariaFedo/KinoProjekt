@@ -28,27 +28,6 @@ namespace Cinema.Ticket.System
                 throw new global::System.NotImplementedException();
             }
         }
-        //public Worker()  ??? to po co? 
-
-        //{
-        //    try
-        //    {
-        //        counter++;
-        //        this.Email = "blep";
-        //        this.ID = "Wnr" + counter.ToString();
-        //        this.Name = "blep";
-        //        this.Phone = "blep";
-        //        this.Surname = "blep";
-        //        this.IdCard = "Work" + counter.ToString();
-        //        this.Position = "blep";
-        //        this.Login = "blep";
-        //        this.Password = "blep";
-        //    }
-        //    catch
-        //    {
-        //        throw new global::System.NotImplementedException();
-        //    }
-        //}
 
         private static int counter = 0;
         private string _IdCard;

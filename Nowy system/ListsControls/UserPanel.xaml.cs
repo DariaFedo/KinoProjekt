@@ -21,11 +21,13 @@ namespace Nowy_system.ListsControls
     public partial class UserPanel : UserControl
     {
         CTS.System Program;
+        FilmControl filmPanel;
 
         public UserPanel(CTS.System program)
         {
             InitializeComponent();
             this.Program = program;
+            filmPanel = new FilmControl(Program);
         }
         private void Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -45,7 +47,6 @@ namespace Nowy_system.ListsControls
             }
             if (sender.Equals(this.filmBtn))
             {
-                FilmControl filmPanel = new FilmControl(Program);
                 MainPanel.Children.Clear();
                 MainPanel.Children.Add(filmPanel);
 
@@ -82,7 +83,22 @@ namespace Nowy_system.ListsControls
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-
+            if (filmPanel.films.IsVisible)
+            {
+                if (filmPanel.films.SelectedIndex > -1 && !(filmPanel.films.SelectedItems.Count > 1))
+                {
+                    Film_sForm film_SForm = new Film_sForm(Program);
+                    CTS.Film film1 = (CTS.Film)filmPanel.films.SelectedItem;
+                    CTS.Film backup = new CTS.Film((CTS.Film)filmPanel.films.SelectedItem);
+                    film_SForm.film = new CTS.Film((CTS.Film)filmPanel.films.SelectedItem);
+                    film_SForm.FilmForm.DataContext = film_SForm.film;
+                    film_SForm.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Item not selected, or selected more than one");
+                }
+            }
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
@@ -92,7 +108,10 @@ namespace Nowy_system.ListsControls
 
         private void Del_Click(object sender, RoutedEventArgs e)
         {
+            if (filmPanel.films.IsVisible)
+            {
 
+            }
         }
     }
 }

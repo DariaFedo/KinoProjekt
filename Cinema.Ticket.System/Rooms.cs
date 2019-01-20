@@ -11,6 +11,7 @@ namespace Cinema.Ticket.System
         {
             try
             {
+                counter++;
                 this.Roomid = "Room" + counter.ToString();
                 this.Room_number = roomnumber;
                 this.Row = row;

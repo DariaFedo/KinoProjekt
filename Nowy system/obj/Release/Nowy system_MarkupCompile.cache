@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-I:\STUDIA\Programowanie3\KINO\Cinema.Daria\Cinema\Nowy system\obj\Release\
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Nowy system\obj\Release\
 Nowy_system
 none
 false
 TRACE
-I:\STUDIA\Programowanie3\KINO\Cinema.Daria\Cinema\Nowy system\App.xaml
-101202811718
+I:\STUDIA\Programowanie3\KINO\kinochujchujchuj\Nowy system\App.xaml
+12558706198
 
-141204050013
-1201518599804
-ListsControls\MainUserControl.xaml;ListsControls\BookingControl.xaml;ListsControls\ShowControl.xaml;ListsControls\FilmControl.xaml;ListsControls\TicketControl.xaml;ListsControls\ClientControl.xaml;ListsControls\RoomControl.xaml;ListsControls\WorkerControl.xaml;Logowanie.xaml;MainWindow.xaml;
+16588679897
+120156787739
+Film'sForm.xaml;ListsControls\BookingControl.xaml;ListsControls\ShowControl.xaml;ListsControls\FilmControl.xaml;ListsControls\TicketControl.xaml;ListsControls\ClientControl.xaml;ListsControls\RoomControl.xaml;ListsControls\WorkerControl.xaml;Logowanie.xaml;MainWindow.xaml;ListsControls\UserPanel.xaml;Worker'sForm.xaml;
 
 True
 

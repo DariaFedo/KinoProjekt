@@ -26,7 +26,7 @@ namespace Nowy_system.ListsControls
         {
             InitializeComponent();
             this.Program = program;
-            rooms.ItemsSource = program.RoomCollection;
+            rooms.ItemsSource = Program.RoomCollection;
         }
     }
 }

@@ -21,19 +21,19 @@ namespace Nowy_system
         private void Ladujlisty(CTS.System program)
         {
             CTS.Worker worker = new CTS.Worker("k.mroziewicz@gmail.com", "Krzysztof", "698523641", "Mroziewicz", "Manager", "admin", "admin");
-            CTS.Worker work1 = new CTS.Worker();
             program.WorkerCollection.Add(worker);
 
             worker = new CTS.Worker("d.fedo@gmail.com", "Daria", "625523641", "Fedorowicz", "Bileter", "admin1", "admin1");
             program.WorkerCollection.Add(worker);
 
             CTS.Room pokoj1 = new CTS.Room('a', 2, 7);
+            program.RoomCollection.Add(pokoj1);
 
             CTS.Client client = new CTS.Client("sz.chlond@gmail.com", "Szymon", "698563641", "Chlond");
             program.ClientCollection.Add(client);
 
             CTS.Client client1 = new CTS.Client("u.gumola@gmail.com", "Urszula", "698563641", "Gumola");
-            program.ClientCollection.Add(client);
+            program.ClientCollection.Add(client1);
 
             DateTime datepremiere = new DateTime(2015, 10, 6);
             CTS.Film film = new CTS.Film(18, "Clarke, Harington, Glen", "Benioff", "Fantasy", "English, Polish", 160, datepremiere, "2D", "Game of Thrones");
@@ -42,7 +42,7 @@ namespace Nowy_system
             datepremiere = new DateTime(2010, 11, 8);
 
             CTS.Film film1 = new CTS.Film(10, "Schwarzenegger, Depp", "Jolie", "Thriller", "English, Polish", 180, datepremiere, "2D", "Nie ma takiego filmu");
-            program.FilmCollection.Add(film);
+            program.FilmCollection.Add(film1);
 
             DateTime dateshow = new DateTime(2008, 3, 1, 7, 0, 0);
 
@@ -69,9 +69,7 @@ namespace Nowy_system
         {
             program = new CTS.System();
             logowanie = new Logowanie(program);
-            Ladujlisty(program);
-          
-            
+            Ladujlisty(program);            
             logowanie.Show();
 
            logowanie.Closed += new EventHandler(Logowanie_Closed);

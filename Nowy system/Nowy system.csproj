@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Acceptchange.xaml.cs">
+      <DependentUpon>Acceptchange.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Film%27sForm.xaml.cs">
       <DependentUpon>Film%27sForm.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
     <Compile Include="Worker%27sForm.xaml.cs">
       <DependentUpon>Worker%27sForm.xaml</DependentUpon>
     </Compile>
+    <Page Include="Acceptchange.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Film%27sForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
