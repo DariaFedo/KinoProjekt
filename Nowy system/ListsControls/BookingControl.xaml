@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Nowy_system.ListsControls.BookingControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Nowy_system.ListsControls"
+             mc:Ignorable="d" >
+    <Grid>
+        <!--List of bookings-->
+        <ListView Name="bookings" Background="LightGray">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="auto" DisplayMemberBinding="{Binding ID}" />
+                    <GridViewColumn Header="Date" Width="auto" DisplayMemberBinding="{Binding Date}" />
+                    <GridViewColumn Header="Status" Width="auto" DisplayMemberBinding="{Binding Status}" />
+                    <GridViewColumn Header="Tickets" Width="auto" DisplayMemberBinding="{Binding Tickets}" />
+                    <GridViewColumn Header="Price" Width="auto" DisplayMemberBinding="{Binding Price}"/>
+                    <GridViewColumn Header="Show" Width="auto" DisplayMemberBinding="{Binding Show}"/>
+                    <GridViewColumn Header="Client" Width="auto" DisplayMemberBinding="{Binding Client}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

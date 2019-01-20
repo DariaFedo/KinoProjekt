@@ -1,0 +1,89 @@
+﻿<Window x:Class="Nowy_system.Worker_sForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nowy_system"
+        mc:Ignorable="d"
+        Title="Worker_sForm" Height="800" MinHeight="750" Width="500" MinWidth="400">
+    
+    <Window.Resources>
+        <Style x:Key="TextBoxStyling" TargetType="TextBox">
+            <Setter Property= "Height" Value="30"/>
+            <Setter Property= "Width" Value="200"/>
+            <Setter Property= "BorderThickness" Value ="2" />
+            <Setter Property= "BorderBrush" Value="DarkCyan" />
+            <Setter Property= "TextAlignment" Value="Left" />
+            <Setter Property= "VerticalContentAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="LabelStyling" TargetType="Label">
+            <Setter Property= "Height" Value="30"/>
+            <Setter Property= "Width" Value="100"/>
+            <Setter Property= "VerticalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="WorkerForm">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"  />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="55" />
+            <RowDefinition  Height="80"/>
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+
+        </Grid.RowDefinitions>
+
+        <!-- Formularz tytuł -->
+        <TextBlock x:Name="WorkerHeader" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" 
+                   FontSize="24" VerticalAlignment="Center" FontStyle="Normal" FontWeight="UltraBold" Margin="135,13,128,10">           
+        Worker's form</TextBlock>
+
+        <!-- Imię texbox + label -->
+        <Label x:Name="namelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="1" Margin="50,26,350,25"> Name</Label>
+        <TextBox x:Name="nameInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Name, Mode=TwoWay}" Grid.Row="1"/>
+
+        <!-- Nazwisko textbox + label -->
+        <Label x:Name="surnamelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="2" Margin="50,25,350,26">Surname</Label>
+        <TextBox x:Name="surnameInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Surname, Mode=TwoWay}" Grid.Row="2"/>
+
+        <!-- Email texbox + label -->
+        <Label x:Name="Emaillabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="3" Margin="50,26,350,25">E-mail</Label>
+        <TextBox x:Name="EmailInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Email, Mode=TwoWay}" Grid.Row="3"/>
+
+        <!-- Phone texbox + label -->
+        <Label x:Name="Phonelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="4" Margin="50,26,350,25">Phone</Label>
+        <TextBox x:Name="PhoneInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Phone, Mode=TwoWay}" Grid.Row="4"/>
+
+        <!-- Login texbox + label -->
+        <Label x:Name="Loginlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="5" Margin="50,26,350,25">Login</Label>
+        <TextBox x:Name="LoginInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Login, Mode=TwoWay}" Grid.Row="5"/>
+
+        <!-- Password texbox + label -->
+        <Label x:Name="Passwordlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="6" Margin="50,26,350,25">Password</Label>
+        <TextBox x:Name="PasswordInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Password, Mode=TwoWay}" Grid.Row="6"/>
+
+        <!-- Position texbox + label -->
+        <Label x:Name="Positionlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="7" Margin="50,26,350,25">Position</Label>
+        <TextBox x:Name="PositionInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Position, Mode=TwoWay}" Grid.Row="7"/>
+
+        <!-- Zatwierdź -->
+        <Button x:Name="zatwierdz" Grid.Row="8" Width="100" Height="30" HorizontalAlignment="Center"
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" >Zatwierdź
+        </Button>
+
+
+
+
+
+    </Grid>
+</Window>

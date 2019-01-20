@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Cinema.Ticket.System.Ticket">
+    <Position X="2.75" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABQAAAAAAAgEAAAAAAABAAAECAQAECAAABAA=</HashCode>
+      <FileName>Ticket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Booking" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cinema.Ticket.System.Worker">
+    <Position X="10.75" Y="9.75" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACAAAEAgAAAAgAAAAAAAAAECAAAQAAAAEAA=</HashCode>
+      <FileName>Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Ticket.System.Person">
+    <Position X="10.5" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAhAAQAAAAIAQABAEAAAAAAAAAIAAEAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Ticket.System.Film">
+    <Position X="5.5" Y="18" Width="8.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAFxCCAAAAEAAAIIAAARAAIgABAECABAAABAAAAQ=</HashCode>
+      <FileName>Film.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Ticket.System.Booking">
+    <Position X="6.5" Y="4.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAABAMAAACAAAQABCEAAEAAAAAEQEEAAAGAAAAAAAA=</HashCode>
+      <FileName>Booking.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Clientsbookings" />
+      <Property Name="Show" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cinema.Ticket.System.Room">
+    <Position X="0.5" Y="16.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAgAABAAAQAAAgAAAAAAIAAgEAAAAAAAAACAA=</HashCode>
+      <FileName>CINEMA_ROOMS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Ticket.System.Show">
+    <Position X="1.5" Y="13" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAIAAAAAAABAAAAAABAAAAgAAAAAAAAE=</HashCode>
+      <FileName>Show.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Film" />
+      <Property Name="Cinema_rooms" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Cinema.Ticket.System.Client">
+    <Position X="6" Y="9.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cinema.Ticket.System.System">
+    <Position X="6.25" Y="12.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAUCABAAgAGAAGADAABgAAAJAIhABAAKAAAAAAAgAAQ=</HashCode>
+      <FileName>System.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ticket" />
+      <Property Name="Film" />
+      <Property Name="Worker" />
+      <Property Name="Client" />
+      <Property Name="Cinema_rooms" />
+      <Property Name="Booking" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

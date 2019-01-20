@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\fedo\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\fedo\\Desktop\\Cinema-043c158b2a60f068b36faf07f3189a1be209e21c\\Cinema.Ticket.System\\Cinema.Ticket.System.csproj",
+      "projectName": "Cinema.Ticket.System",
+      "projectPath": "C:\\Users\\fedo\\Desktop\\Cinema-043c158b2a60f068b36faf07f3189a1be209e21c\\Cinema.Ticket.System\\Cinema.Ticket.System.csproj",
+      "packagesPath": "C:\\Users\\fedo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fedo\\Desktop\\Cinema-043c158b2a60f068b36faf07f3189a1be209e21c\\Cinema.Ticket.System\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\fedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "netstandard2.0": {}
+    }
+  }
+}

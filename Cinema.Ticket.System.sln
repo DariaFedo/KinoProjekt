@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Ticket.System", "Cinema.Ticket.System\Cinema.Ticket.System.csproj", "{883CE6D7-C372-4AAC-9FF6-F8A830363C84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nowy system", "Nowy system\Nowy system.csproj", "{25406E3A-4079-46CA-918A-EAB85A8239B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{883CE6D7-C372-4AAC-9FF6-F8A830363C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883CE6D7-C372-4AAC-9FF6-F8A830363C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883CE6D7-C372-4AAC-9FF6-F8A830363C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883CE6D7-C372-4AAC-9FF6-F8A830363C84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25406E3A-4079-46CA-918A-EAB85A8239B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25406E3A-4079-46CA-918A-EAB85A8239B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25406E3A-4079-46CA-918A-EAB85A8239B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25406E3A-4079-46CA-918A-EAB85A8239B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6D43826-A5F8-4FC3-80FC-19F7B5BEBBCB}
+	EndGlobalSection
+EndGlobal

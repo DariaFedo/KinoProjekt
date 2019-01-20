@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Nowy_system.ListsControls.ShowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Nowy_system.ListsControls"
+             mc:Ignorable="d" >
+    <Grid>
+        <!--List of workers-->
+        <ListView Name="shows">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="auto" DisplayMemberBinding="{Binding IdShow}" />
+                    <GridViewColumn Header="Date" Width="auto" DisplayMemberBinding="{Binding Date_of_show}" />
+                    <GridViewColumn Header="Film" Width="auto" DisplayMemberBinding="{Binding Film}" />
+                    <GridViewColumn Header="Room" Width="auto" DisplayMemberBinding="{Binding Cinema_rooms}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Nowy_system.ListsControls.RoomControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Nowy_system.ListsControls">
+    <Grid>
+
+        <ListView Name="rooms" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="auto"  DisplayMemberBinding="{Binding Roomid}" />
+                    <GridViewColumn Header="Rows" Width="auto" DisplayMemberBinding="{Binding Row}" />
+                    <GridViewColumn Header="Number" Width="auto" DisplayMemberBinding="{Binding Room_number}" />
+                    <GridViewColumn Header="SeatNumber" Width="auto" DisplayMemberBinding="{Binding SeatNumber}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>
