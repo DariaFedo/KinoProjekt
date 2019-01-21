@@ -89,7 +89,7 @@
 
             <!-- Zatwierdź -->
             <Button x:Name="zatwierdz" Grid.Row="10" Width="100" Height="30" HorizontalAlignment="Center"
-                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="98,25,302,26" Click="Zatwierdz_Click"  >Zatwierdź
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="98,25,302,26" Click="Zatwierdz_Click"  >Apply
             </Button>
 
             <!-- Anuluj -->

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CTS = Cinema.Ticket.System;
 
 namespace Nowy_system
 {
@@ -19,9 +20,31 @@ namespace Nowy_system
     /// </summary>
     public partial class Worker_sForm : Window
     {
-        public Worker_sForm()
+        //public CTS.Worker worker = new CTS.Worker();
+        //CTS.System Program;
+        public Worker_sForm(/*CTS.System program*/)
         {
+            //Program = program;
             InitializeComponent();
+            //WorkerForm.DataContext = worker;
         }
+
+        //private void Zatwierdz_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Acceptchange acc = new Acceptchange();
+        //    acc.Show();
+        //    if (acc.check)
+        //    {
+        //        Program.WorkerCollection.Remove(worker);
+        //        Program.WorkerCollection.Add(worker);
+        //        acc.Close();
+        //    }
+        //}
+
+        //private void Cancel_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Program.WorkerCollection.Remove(worker);
+        //    Program.WorkerCollection.Add(worker);
+        //}
     }
 }
