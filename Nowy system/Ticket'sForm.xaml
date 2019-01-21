@@ -54,7 +54,12 @@
 
         <!-- Zatwierdź -->
         <Button x:Name="zatwierdz" Grid.Row="3" Width="100" Height="30" HorizontalAlignment="Center"
-                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" >Apply
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="98,25,302,26" Click="Zatwierdz_Click"  >Apply
+        </Button>
+
+        <!-- Anuluj -->
+        <Button x:Name="cancel" Grid.Row="3" Width="100" Height="30" HorizontalAlignment="Center"
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="302,25,98,26" Click="Cancel_Click"  >Cancel
         </Button>
 
     </Grid>

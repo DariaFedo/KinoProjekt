@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="1200">
     <Grid>
         <!--List of clients-->
-        <ListView Name="clients" Background="LightGray" Width="1200" >
+        <ListView Name="clients">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" Width="70" DisplayMemberBinding="{Binding ID}" />

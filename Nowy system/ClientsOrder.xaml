@@ -24,7 +24,7 @@
         </Style>
     </Window.Resources>
 
-    <Grid x:Name="WorkerForm">
+    <Grid x:Name="ClientForm">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500"  />
@@ -44,9 +44,9 @@
         </Grid.RowDefinitions>
 
         <!-- Formularz tytuł -->
-        <TextBlock x:Name="WorkerHeader" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" 
+        <TextBlock x:Name="ClientHeader" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" 
                    FontSize="24" VerticalAlignment="Center" FontStyle="Normal" FontWeight="UltraBold" Margin="135,13,128,10">           
-        Worker's form</TextBlock>
+        Your booking</TextBlock>
 
         <!-- Imię texbox + label -->
         <Label x:Name="namelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="1" Margin="50,26,350,25">Name</Label>

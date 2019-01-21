@@ -29,6 +29,38 @@ namespace Cinema.Ticket.System
             }
         }
 
+        //public Worker(Worker worker1)
+        //{
+        //    try
+        //    {
+                
+        //        this.Email = worker1.Email;
+        //        this.ID = worker1.ID;
+        //        this.Name = worker1.Name;
+        //        this.Phone = worker1.Phone;
+        //        this.Surname = worker1.Surname;
+        //        this.IdCard = worker1.IdCard;
+        //        this.Position = worker1.Postion;
+        //        this.Login = worker1.Login;
+        //        this.Password = worker1.Password;
+
+        //    }
+        //    catch
+        //    {
+        //        throw new global::System.NotImplementedException();
+        //    }
+        //}
+
+        //public Worker()
+        //{
+        //    try
+        //    {
+        //    }
+        //    catch
+        //    {
+        //        throw new global::System.NotImplementedException();
+        //    }
+        //}
         private static int counter = 0;
         private string _IdCard;
         private string _Position;
