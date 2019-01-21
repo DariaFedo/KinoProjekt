@@ -1,0 +1,71 @@
+﻿<Window x:Class="Nowy_system.Show_sForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nowy_system"
+        mc:Ignorable="d"
+        Title="Show_sForm" Height="500" MinHeight="450" Width="500" MinWidth="400">
+
+    <Window.Resources>
+        <Style x:Key="TextBoxStyling" TargetType="TextBox">
+            <Setter Property= "Height" Value="30"/>
+            <Setter Property= "Width" Value="200"/>
+            <Setter Property= "BorderThickness" Value ="2" />
+            <Setter Property= "BorderBrush" Value="DarkCyan" />
+            <Setter Property= "TextAlignment" Value="Left" />
+            <Setter Property= "VerticalContentAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="LabelStyling" TargetType="Label">
+            <Setter Property= "Height" Value="30"/>
+            <Setter Property= "Width" Value="100"/>
+            <Setter Property= "VerticalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="ShowForm">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"  />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="55" />
+            <RowDefinition  Height="80"/>
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+            <RowDefinition  Height="80" />
+
+        </Grid.RowDefinitions>
+
+        <!-- Formularz tytuł -->
+        <TextBlock x:Name="ShowHeader" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" 
+                   FontSize="24" VerticalAlignment="Center" FontStyle="Normal" FontWeight="UltraBold" Margin="135,13,128,10">           
+        Show's form</TextBlock>
+
+        <!-- Data texbox + label -->
+        <Label x:Name="Datelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Width="200"  Grid.Row="1" Margin="10,26,290,25">MM/dd/yyyy h:mm</Label>
+        <TextBox x:Name="DateInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Date, StringFormat='{}{0:MM/dd/yyyy h:mm}'}" Grid.Row="1" IsEnabled="False"/>
+
+        <!-- Film  + label -->
+        <Label x:Name="Filmlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="2" Margin="50,25,350,26">Film</Label>
+        <ComboBox x:Name="FilmInput" Height="30" Width="200" Grid.Row="2"/>
+
+        <!-- Room + label -->
+        <Label x:Name="Roomlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="3" Margin="50,26,350,25">Room</Label>
+        <ComboBox x:Name="RoomInput" Height="30" Width="200" Grid.Row="3"/>
+
+
+        <!-- Zatwierdź -->
+        <Button x:Name="zatwierdz" Grid.Row="8" Width="100" Height="30" HorizontalAlignment="Center"
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" >Apply
+        </Button>
+
+
+
+
+
+    </Grid>
+</Window>
+

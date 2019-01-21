@@ -22,12 +22,18 @@ namespace Nowy_system.ListsControls
     {
         CTS.System Program;
         FilmControl filmPanel;
+        WorkerControl workerPanel;
+        ShowControl showPanel;
+        TicketControl ticketPanel;
 
         public UserPanel(CTS.System program)
         {
             InitializeComponent();
             this.Program = program;
             filmPanel = new FilmControl(Program);
+            workerPanel = new WorkerControl(Program);
+            showPanel = new ShowControl(Program);
+            ticketPanel = new TicketControl(Program);
         }
         private void Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -99,6 +105,23 @@ namespace Nowy_system.ListsControls
                     MessageBox.Show("Item not selected, or selected more than one");
                 }
             }
+
+            //if (workerPanel.workers.IsVisible)
+            //{
+            //    if (workerPanel.workers.SelectedIndex > -1 && !(workerPanel.workers.SelectedItems.Count > 1))
+            //    {
+            //        Worker_sForm worker_SForm = new Worker_sForm(Program);
+            //        CTS.Worker film1 = (CTS.Worker)workerPanel.workers.SelectedItem;
+            //        CTS.Worker backup = new CTS.Worker((CTS.Worker)workerPanel.workers.SelectedItem);
+            //        worker_SForm.worker = new CTS.Worker((CTS.Worker)workerPanel.workers.SelectedItem);
+            //        worker_SForm.WorkerForm.DataContext = worker_SForm.worker;
+            //        worker_SForm.ShowDialog();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Item not selected, or selected more than one");
+            //    }
+            //}
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
