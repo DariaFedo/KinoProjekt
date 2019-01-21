@@ -29,22 +29,22 @@ namespace Nowy_system
             //WorkerForm.DataContext = worker;
         }
 
-        //private void Zatwierdz_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Acceptchange acc = new Acceptchange();
-        //    acc.Show();
-        //    if (acc.check)
-        //    {
-        //        Program.WorkerCollection.Remove(worker);
-        //        Program.WorkerCollection.Add(worker);
-        //        acc.Close();
-        //    }
-        //}
+        private void Zatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            //Acceptchange acc = new Acceptchange();
+            //acc.Show();
+            //if (acc.check)
+            //{
+            //    Program.WorkerCollection.Remove(worker);
+            //    Program.WorkerCollection.Add(worker);
+            //    acc.Close();
+            //}
+        }
 
-        //private void Cancel_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Program.WorkerCollection.Remove(worker);
-        //    Program.WorkerCollection.Add(worker);
-        //}
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            //Program.WorkerCollection.Remove(worker);
+            //Program.WorkerCollection.Add(worker);
+        }
     }
 }

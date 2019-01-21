@@ -22,18 +22,19 @@ namespace Nowy_system.ListsControls
     {
         CTS.System Program;
         FilmControl filmPanel;
-        WorkerControl workerPanel;
-        ShowControl showPanel;
-        TicketControl ticketPanel;
+        //WorkerControl workerPanel;
+        //ShowControl showPanel;
+        //TicketControl ticketPanel;
 
         public UserPanel(CTS.System program)
         {
             InitializeComponent();
             this.Program = program;
             filmPanel = new FilmControl(Program);
-            workerPanel = new WorkerControl(Program);
-            showPanel = new ShowControl(Program);
-            ticketPanel = new TicketControl(Program);
+            //workerPanel = new WorkerControl(Program);
+            //showPanel = new ShowControl(Program);
+            //ticketPanel = new TicketControl(Program);
+           
         }
         private void Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -111,7 +112,7 @@ namespace Nowy_system.ListsControls
             //    if (workerPanel.workers.SelectedIndex > -1 && !(workerPanel.workers.SelectedItems.Count > 1))
             //    {
             //        Worker_sForm worker_SForm = new Worker_sForm(Program);
-            //        CTS.Worker film1 = (CTS.Worker)workerPanel.workers.SelectedItem;
+            //        CTS.Worker worker1 = (CTS.Worker)workerPanel.workers.SelectedItem;
             //        CTS.Worker backup = new CTS.Worker((CTS.Worker)workerPanel.workers.SelectedItem);
             //        worker_SForm.worker = new CTS.Worker((CTS.Worker)workerPanel.workers.SelectedItem);
             //        worker_SForm.WorkerForm.DataContext = worker_SForm.worker;
@@ -122,6 +123,42 @@ namespace Nowy_system.ListsControls
             //        MessageBox.Show("Item not selected, or selected more than one");
             //    }
             //}
+
+            //if (showPanel.shows.IsVisible)
+            //{
+            //    if (showPanel.shows.SelectedIndex > -1 && !(showPanel.shows.SelectedItems.Count > 1))
+            //    {
+            //        Show_sForm show_SForm = new Show_sForm(Program);
+            //        CTS.Show show1 = (CTS.Show)showPanel.shows.SelectedItem;
+            //        CTS.Show backup = new CTS.Show((CTS.Show)showPanel.shows.SelectedItem);
+            //        show_SForm.show = new CTS.Show((CTS.Show)showPanel.shows.SelectedItem);
+            //        show_SForm.ShowForm.DataContext =show_SForm.show;
+            //        show_SForm.ShowDialog();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Item not selected, or selected more than one");
+            //    }
+            //}
+
+            //if (ticketPanel.tickets.IsVisible)
+            //{
+            //    if (ticketPanel.tickets.SelectedIndex > -1 && !(ticketPanel.tickets.SelectedItems.Count > 1))
+            //    {
+            //        Ticket_sForm ticket_SForm = new Ticket_sForm(Program);
+            //        CTS.Ticket ticket1 = (CTS.Ticket)ticketPanel.tickets.SelectedItem;
+            //        CTS.Ticket backup = new CTS.Ticket((CTS.Ticket)ticketPanel.tickets.SelectedItem);
+            //        ticket_SForm.worker = new CTS.Ticket((CTS.Ticket)ticketPanel.tickets.SelectedItem);
+            //        ticket_SForm.TicketForm.DataContext = ticket_SForm.ticket;
+            //        ticket_SForm.ShowDialog();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Item not selected, or selected more than one");
+            //    }
+            //}
+
+            
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)

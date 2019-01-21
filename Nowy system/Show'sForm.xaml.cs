@@ -19,9 +19,31 @@ namespace Nowy_system
     /// </summary>
     public partial class Show_sForm : Window
     {
-        public Show_sForm()
+        //public CTS.Show worker = new CTS.Worker();
+        //CTS.System Program;
+        public Show_sForm(/*CTS.System program*/)
         {
+            //Program = program;
             InitializeComponent();
+            //ShowForm.DataContext = show;
+        }
+
+        private void Zatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            //Acceptchange acc = new Acceptchange();
+            //acc.Show();
+            //if (acc.check)
+            //{
+            //    Program.ShowCollection.Remove(show);
+            //    Program.ShowCollection.Add(show);
+            //    acc.Close();
+            //}
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            //Program.ShowCollection.Remove(show);
+            //Program.ShowCollection.Add(show);
         }
     }
 }

@@ -50,37 +50,41 @@
 
         <!-- Imię texbox + label -->
         <Label x:Name="namelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="1" Margin="50,26,350,25"> Name</Label>
-        <TextBox x:Name="nameInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Name, Mode=OneWay}" Grid.Row="1"/>
+        <TextBox x:Name="nameInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Name}" Grid.Row="1"/>
 
         <!-- Nazwisko textbox + label -->
         <Label x:Name="surnamelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="2" Margin="50,25,350,26">Surname</Label>
-        <TextBox x:Name="surnameInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Surname, Mode=OneWay}" Grid.Row="2"/>
+        <TextBox x:Name="surnameInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Surname}" Grid.Row="2"/>
 
         <!-- Email texbox + label -->
         <Label x:Name="Emaillabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="3" Margin="50,26,350,25">E-mail</Label>
-        <TextBox x:Name="EmailInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Email, Mode=OneWay}" Grid.Row="3"/>
+        <TextBox x:Name="EmailInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Email}" Grid.Row="3"/>
 
         <!-- Phone texbox + label -->
         <Label x:Name="Phonelabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="4" Margin="50,26,350,25">Phone</Label>
-        <TextBox x:Name="PhoneInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Phone, Mode=OneWay}" Grid.Row="4"/>
+        <TextBox x:Name="PhoneInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Phone}" Grid.Row="4"/>
 
         <!-- Login texbox + label -->
         <Label x:Name="Loginlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="5" Margin="50,26,350,25">Login</Label>
-        <TextBox x:Name="LoginInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Login, Mode=OneWay}" Grid.Row="5"/>
+        <TextBox x:Name="LoginInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Login}" Grid.Row="5"/>
 
         <!-- Password texbox + label -->
         <Label x:Name="Passwordlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="6" Margin="50,26,350,25">Password</Label>
-        <TextBox x:Name="PasswordInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Password, Mode=OneWay}" Grid.Row="6"/>
+        <TextBox x:Name="PasswordInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Password}" Grid.Row="6"/>
 
         <!-- Position texbox + label -->
         <Label x:Name="Positionlabel" FontWeight="Bold" Style="{StaticResource LabelStyling}" Grid.Row="7" Margin="50,26,350,25">Position</Label>
-        <TextBox x:Name="PositionInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Position, Mode=OneWay}" Grid.Row="7"/>
+        <TextBox x:Name="PositionInput" Style="{StaticResource TextBoxStyling }" Text="{Binding Position}" Grid.Row="7"/>
 
-        <!-- Zatwierdź -->
+         <!-- Zatwierdź -->
         <Button x:Name="zatwierdz" Grid.Row="8" Width="100" Height="30" HorizontalAlignment="Center"
-                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" >Apply
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="98,25,302,26" Click="Zatwierdz_Click"  >Apply
         </Button>
 
+        <!-- Anuluj -->
+        <Button x:Name="cancel" Grid.Row="8" Width="100" Height="30" HorizontalAlignment="Center"
+                FontWeight="Bold" BorderBrush="Black" BorderThickness="2" Margin="302,25,98,26" Click="Cancel_Click"  >Cancel
+        </Button>
 
 
 
