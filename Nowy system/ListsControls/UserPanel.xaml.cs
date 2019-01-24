@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using CTS = Cinema.Ticket.System;
+using System.Collections.ObjectModel;
 
 namespace Nowy_system.ListsControls
 {
@@ -94,12 +95,22 @@ namespace Nowy_system.ListsControls
             {
                 if (filmPanel.films.SelectedIndex > -1 && !(filmPanel.films.SelectedItems.Count > 1))
                 {
-                    Film_sForm film_SForm = new Film_sForm(Program);
-                    CTS.Film film1 = (CTS.Film)filmPanel.films.SelectedItem;
-                    CTS.Film backup = new CTS.Film((CTS.Film)filmPanel.films.SelectedItem);
-                    film_SForm.film = new CTS.Film((CTS.Film)filmPanel.films.SelectedItem);
+                    Film_sForm film_SForm = new Film_sForm();
+                   CTS.Film film = (CTS.Film)filmPanel.films.SelectedItem;
+                    CTS.Film backup = new CTS.Film(film);
+                    film_SForm.film = film;
                     film_SForm.FilmForm.DataContext = film_SForm.film;
                     film_SForm.ShowDialog();
+                    if (film_SForm.check == true)
+                    {
+                        ((ObservableCollection<CTS.Film>)filmPanel.films.ItemsSource).Remove(film);
+                        this.Program.FilmCollection.Add(film_SForm.film);
+                    }
+                    else
+                    {
+                        ((ObservableCollection<CTS.Film>)filmPanel.films.ItemsSource).Remove(film);
+                        this.Program.FilmCollection.Add(backup);
+                    }
                 }
                 else
                 {
@@ -163,14 +174,40 @@ namespace Nowy_system.ListsControls
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
+            if (filmPanel.films.IsVisible)
+            {
+                Film_sForm film_form = new Film_sForm();
+                film_form.ShowDialog();
 
+                if (film_form.check == true)
+                {
+                    this.Program.FilmCollection.Add(film_form.film);
+                }
+            }
         }
 
         private void Del_Click(object sender, RoutedEventArgs e)
         {
             if (filmPanel.films.IsVisible)
             {
+                if (filmPanel.films.SelectedIndex > -1)
+                {
+                    ObservableCollection<CTS.Film> itemsToRemove = new ObservableCollection<CTS.Film>();
 
+                    foreach (CTS.Film item in filmPanel.films.SelectedItems)
+                    {
+                        itemsToRemove.Add(item);
+                    }
+                    foreach (CTS.Film item in itemsToRemove)
+                    {
+                        ((ObservableCollection<CTS.Film>)filmPanel.films.ItemsSource).Remove(item);
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Item not selected, or selected more than one");
+                }
             }
         }
     }

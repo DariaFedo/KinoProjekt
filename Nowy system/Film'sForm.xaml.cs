@@ -21,10 +21,10 @@ namespace Nowy_system
     public partial class Film_sForm : Window
     {
         public CTS.Film film = new CTS.Film();
-        CTS.System Program;
-        public Film_sForm(CTS.System program)
-        {
-            Program = program;
+        public bool check=false;
+        Acceptchange acc = new Acceptchange();
+        public Film_sForm()
+        {         
             InitializeComponent();
             FilmForm.DataContext = film;
 
@@ -32,20 +32,17 @@ namespace Nowy_system
 
         private void Zatwierdz_Click(object sender, RoutedEventArgs e)
         {
-            Acceptchange acc = new Acceptchange();
-            acc.Show();
+            acc.ShowDialog();
             if(acc.check)
             {
-                Program.FilmCollection.Remove(film);
-                Program.FilmCollection.Add(film);
-                acc.Close();
+                check = true;
+                this.Close();
             }
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            Program.FilmCollection.Remove(film);
-            Program.FilmCollection.Add(film);
+            this.Close();
         }
     }
 }

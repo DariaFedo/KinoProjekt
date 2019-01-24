@@ -16,7 +16,6 @@ namespace Nowy_system
         public MainWindow()
         {
             InitializeComponent();
-
         }
         private void Ladujlisty(CTS.System program)
         {
@@ -71,7 +70,6 @@ namespace Nowy_system
             logowanie = new Logowanie(program);
             Ladujlisty(program);            
             logowanie.Show();
-
            logowanie.Closed += new EventHandler(Logowanie_Closed);
         }
 

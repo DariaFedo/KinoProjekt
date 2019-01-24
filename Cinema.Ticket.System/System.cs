@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections.ObjectModel;
 
 namespace Cinema.Ticket.System
 {
@@ -11,13 +12,13 @@ namespace Cinema.Ticket.System
         {
             try
             {
-                this.FilmCollection = new List<Film>();
-                this.ClientCollection = new List<Client>();
-                this.BookingCollection = new List<Booking>();
-                this.RoomCollection = new List<Room>();
-                this.ShowsCollection = new List<Show>();
-                this.TicketCollection = new List<Ticket>();
-                this.WorkerCollection = new List<Worker>();
+                this.FilmCollection = new ObservableCollection<Film>();
+                this.ClientCollection = new ObservableCollection<Client>();
+                this.BookingCollection = new ObservableCollection<Booking>();
+                this.RoomCollection = new ObservableCollection<Room>();
+                this.ShowsCollection = new ObservableCollection<Show>();
+                this.TicketCollection = new ObservableCollection<Ticket>();
+                this.WorkerCollection = new ObservableCollection<Worker>();
             }
             catch
             {
@@ -44,15 +45,15 @@ namespace Cinema.Ticket.System
             }
         }
 
-        private List<Film> _FilmCollection;
-        private List<Client> _ClientCollection;
-        private List<Worker> _WorkerCollection;
-        private List<Room> _RoomCollection;
-        private List<Booking> _BookingCollection;
-        private List<Show> _ShowsCollection;
-        private List<Ticket> _TicketCollection;
+        private ObservableCollection<Film> _FilmCollection;
+        private ObservableCollection<Client> _ClientCollection;
+        private ObservableCollection<Worker> _WorkerCollection;
+        private ObservableCollection<Room> _RoomCollection;
+        private ObservableCollection<Booking> _BookingCollection;
+        private ObservableCollection<Show> _ShowsCollection;
+        private ObservableCollection<Ticket> _TicketCollection;
 
-        public List<Film> FilmCollection
+        public ObservableCollection<Film> FilmCollection
         {
             get
             {
@@ -64,7 +65,7 @@ namespace Cinema.Ticket.System
             }
         }
 
-        public List<Client> ClientCollection
+        public ObservableCollection<Client> ClientCollection
         {
             get
             {
@@ -76,7 +77,7 @@ namespace Cinema.Ticket.System
             }
         }
 
-        public List<Worker> WorkerCollection
+        public ObservableCollection<Worker> WorkerCollection
         {
             get
             {
@@ -88,7 +89,7 @@ namespace Cinema.Ticket.System
             }
         }
 
-        public List<Room> RoomCollection
+        public ObservableCollection<Room> RoomCollection
         {
             get
             {
@@ -100,7 +101,7 @@ namespace Cinema.Ticket.System
             }
         }
 
-        public List<Booking> BookingCollection
+        public ObservableCollection<Booking> BookingCollection
         {
             get
             {
@@ -112,7 +113,7 @@ namespace Cinema.Ticket.System
             }
         }
 
-        public List<Show> ShowsCollection
+        public ObservableCollection<Show> ShowsCollection
         {
             get
             {
@@ -124,7 +125,7 @@ namespace Cinema.Ticket.System
             }
         }
 
-        public List<Ticket> TicketCollection
+        public ObservableCollection<Ticket> TicketCollection
         {
             get
             {
@@ -208,7 +209,7 @@ namespace Cinema.Ticket.System
         {
             try
             {
-                if (_WorkerCollection.Find(i => (i.Login == login) && (i.Password == password)) is null)
+                if (_WorkerCollection.Where(i => (i.Login == login) && (i.Password == password)) is null)
                     return false;
                 else
                 {

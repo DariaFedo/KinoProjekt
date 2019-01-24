@@ -33,7 +33,6 @@ namespace Nowy_system
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            check = false;
             this.Close();
         }
     }
